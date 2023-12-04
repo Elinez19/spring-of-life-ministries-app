@@ -10,7 +10,7 @@ const PricingBox = (props: {
   return (
     <div className="w-full">
       <div
-        className="wow fadeInUp shadow-three dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark relative z-10 rounded-sm bg-white px-8 py-10 hover:shadow-one"
+        className="wow fadeInUp relative z-10 rounded-sm bg-white px-8 py-10 shadow-three hover:shadow-one dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark"
         data-wow-delay=".1s"
       >
         <div className="flex items-center justify-between">
@@ -30,7 +30,7 @@ const PricingBox = (props: {
         </div>
         <div>{children}</div>
         <div className="absolute bottom-0 right-0 z-[-1]">
-          <svg
+          {/* <svg
             width="179"
             height="158"
             viewBox="0 0 179 158"
@@ -71,7 +71,7 @@ const PricingBox = (props: {
                 <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
               </linearGradient>
             </defs>
-          </svg>
+          </svg> */}
         </div>
       </div>
     </div>

@@ -30,8 +30,9 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                  We are a non-profit making Christian ministry that offers
+                  opportunities for collaborative effort to reach out to Youths
+                  and young adults.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -97,15 +98,15 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
+                  Quick Links
                 </h2>
                 <ul>
                   <li>
                     <a
-                      href="/blogs"
+                      href="tel:2349084858"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blog
+                      Email
                     </a>
                   </li>
                   <li>
@@ -113,7 +114,7 @@ const Footer = () => {
                       href="/pricing"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Pricing
+                      Call Us
                     </a>
                   </li>
                   <li>
@@ -121,7 +122,7 @@ const Footer = () => {
                       href="/about"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
+                      Join Us
                     </a>
                   </li>
                 </ul>
@@ -131,15 +132,23 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
+                  About Us
                 </h2>
                 <ul>
                   <li>
                     <a
-                      href="/"
+                      href="/vision"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      TOS
+                      Our Mission
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/about"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Our Vision
                     </a>
                   </li>
                   <li>
@@ -147,7 +156,7 @@ const Footer = () => {
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Privacy Policy
+                      Our History
                     </a>
                   </li>
                   <li>
@@ -155,7 +164,15 @@ const Footer = () => {
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Refund Policy
+                      Prayer and Support
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Got A Question
                     </a>
                   </li>
                 </ul>
@@ -165,15 +182,15 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
+                  Our Programmes
                 </h2>
                 <ul>
                   <li>
                     <a
-                      href="/contact"
+                      href="/campus"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Contact Support
+                      Campus Mission
                     </a>
                   </li>
                   <li>
@@ -181,7 +198,7 @@ const Footer = () => {
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Terms of Use
+                      Mission Institute
                     </a>
                   </li>
                   <li>
@@ -189,7 +206,31 @@ const Footer = () => {
                       href="/about"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
+                      Leadership Development/Mentorship
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/about"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Nigeria Youth Empowerment
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/about"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      Canada Youth Empowerment
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/about"
+                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    >
+                      America Youth Empowerment
                     </a>
                   </li>
                 </ul>
@@ -211,7 +252,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="absolute right-0 top-14 z-[-1]">
-          <svg
+          {/* <svg
             width="55"
             height="99"
             viewBox="0 0 55 99"
@@ -282,10 +323,10 @@ const Footer = () => {
                 <stop offset="1" stopOpacity="0" />
               </radialGradient>
             </defs>
-          </svg>
+          </svg> */}
         </div>
         <div className="absolute bottom-24 left-0 z-[-1]">
-          <svg
+          {/* <svg
             width="79"
             height="94"
             viewBox="0 0 79 94"
@@ -398,7 +439,7 @@ const Footer = () => {
                 <stop offset="1" stopColor="#5D0F69" stopOpacity="0.51" />
               </linearGradient>
             </defs>
-          </svg>
+          </svg> */}
         </div>
       </footer>
     </>

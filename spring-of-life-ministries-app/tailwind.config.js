@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+// /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -8,10 +8,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     container: {
-      center: true,
-      padding: "1rem",
-    },
-
+        center: true,
+        padding: "15px",
+      },
     screens: {
       xs: "450px",
       // => @media (min-width: 450px) { ... }
@@ -38,8 +37,8 @@ module.exports = {
         white: "#FFFFFF",
         black: "#121723",
         dark: "#1D2430",
-        primary: "#72049E",
-        yellow: "#FBB040",
+        primary: "#05143C",
+        yellow: "##F69E00",
         orange: '#F9CD92',
         green: '#6B9F36',
         "body-color": "#788293",

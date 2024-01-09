@@ -1,6 +1,4 @@
 "use client";
-
-import React from "react";
 import Slider from "react-slick";
 import Slide from "../Slide/Slide";
 
@@ -30,7 +28,7 @@ const Banner = () => {
       id: 1,
       img: "/banner-2.png",
       title: "Our Mission Programmes",
-      mainTitle: "MODERN SUNGLASSES",
+      mainTitle: "Develop a disciple-making Culture Among Students In Campuses",
       price: "",
     },
     {

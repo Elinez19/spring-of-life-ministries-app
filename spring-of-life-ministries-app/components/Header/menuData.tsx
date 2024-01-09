@@ -7,18 +7,6 @@ const menuData: Menu[] = [
     path: "/",
     newTab: false,
   },
-  // {
-  //   id: 33,
-  //   title: "Resources",
-  //   path: "/blog",
-  //   newTab: false,
-  // },
-  // {
-  //   id: 3,
-  //   title: "About",
-  //   path: "/about",
-  //   newTab: false,
-  // },
   {
     id: 4,
     title: "About",
@@ -48,31 +36,6 @@ const menuData: Menu[] = [
         path: "/board",
         newTab: false,
       },
-      // {
-      //   id: 45,
-      //   title: "Youth Empowerment UK",
-      //   path: "/courses",
-      //   newTab: false,
-      // },
-      // {
-      //   id: 46,
-      //   title: "Sign In",
-      //   path: "/signin",
-      //   newTab: false,
-      // },
-      // {
-      //   id: 47,
-      //   title: "Sign Up",
-      //   path: "/signup",
-      //   newTab: false,
-      // },
-
-      // {
-      //   id: 48,
-      //   title: "Bible Study",
-      //   path: "/courses",
-      //   newTab: false,
-      // },
     ],
   },
   {
@@ -110,19 +73,6 @@ const menuData: Menu[] = [
         path: "/courses",
         newTab: false,
       },
-      // {
-      //   id: 46,
-      //   title: "Sign In",
-      //   path: "/signin",
-      //   newTab: false,
-      // },
-      // {
-      //   id: 47,
-      //   title: "Sign Up",
-      //   path: "/signup",
-      //   newTab: false,
-      // },
-
       {
         id: 48,
         title: "Bible Study",

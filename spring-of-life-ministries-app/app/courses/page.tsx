@@ -1,4 +1,4 @@
-import CoursesPage from "@/components/Courses/CoursesPage";
+import CoursesPage from "@/components/Programmes/MissionProgrammes";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";

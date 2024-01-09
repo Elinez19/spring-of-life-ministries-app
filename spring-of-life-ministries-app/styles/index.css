@@ -10,13 +10,24 @@
   }
 }
 
+.slides .swiper-pagination-bullet {
+  @apply h-2.5 w-2.5 bg-stroke opacity-100;
+}
+.slides .swiper-pagination-bullet-active {
+  @apply w-5 rounded-full bg-primary;
+}
+
+.slides .swiper-pagination {
+  @apply relative pt-[50px];
+}
+
 @layer components {
   input[type="checkbox"]:checked ~ label span svg {
     @apply inline-flex;
   }
 
   .sticky .header-logo {
-    @apply py-5 lg:py-2;
+    @apply py-1 lg:py-1;
   }
 
   .sticky .menu-scroll.active {

@@ -1,5 +1,11 @@
+import AboutCta from "@/components/About/AboutCta";
+import AboutHero from "@/components/About/AboutHero";
+import AboutSectionFour from "@/components/About/AboutSectionFour";
 import AboutSectionOne from "@/components/About/AboutSectionOne";
+import AboutSectionSix from "@/components/About/AboutSectionSix";
+import AboutSectionThree from "@/components/About/AboutSectionThree";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import AboutTeam from "@/components/About/AboutTeam";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
@@ -20,6 +26,11 @@ const AboutPage = () => {
       />
       <AboutSectionOne />
       <AboutSectionTwo />
+      {/* <AboutSectionFour />
+      <AboutHero />
+      <AboutSectionSix />
+      <AboutTeam />
+      <AboutCta /> */}
     </>
   );
 };

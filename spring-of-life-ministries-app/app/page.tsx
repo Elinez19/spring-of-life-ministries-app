@@ -15,7 +15,6 @@ import Banner from "@/components/Hero/Hero";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Herobanner from "@/components/HeroBanner";
-import Team from "@/components/Team";
 
 export const metadata: Metadata = {
   title: "Spring of Life Ministries",
@@ -31,8 +30,7 @@ export default function Home() {
       {/* <Banner />
       <Hero /> */}
       <Tabs />
-      <Team />
-      {/* <Mentor /> */}
+      <Mentor />
       <Features />
       <Video />
       <Brands />

@@ -1,8 +1,8 @@
-import type { Testimonials } from "@/types/testimonials";
+import { Testimonial } from "@/types/herobanner";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
 
-const testimonialData: Testimonials[] = [
+const testimonialData: Testimonial[] = [
   {
     id: 1,
     name: "David Adebayor",

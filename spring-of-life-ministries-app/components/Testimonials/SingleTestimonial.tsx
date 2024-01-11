@@ -1,4 +1,4 @@
-import { Testimonial } from "@/types/herobanner";
+import type { Testimonials } from "@/types/testimonials";
 import Image from "next/image";
 const starIcon = (
   <svg width="18" height="16" viewBox="0 0 18 16" className="fill-current">
@@ -6,7 +6,7 @@ const starIcon = (
   </svg>
 );
 
-const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
+const SingleTestimonial = ({ testimonial }: { testimonial: Testimonials }) => {
   const { star, name, image, content, designation } = testimonial;
 
   let ratingIcons = [];
@@ -29,7 +29,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
           “{content}
         </p>
         <div className="flex items-center">
-          <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
+          <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden">
             <Image src={image} alt={name} fill />
           </div>
           <div className="w-full">

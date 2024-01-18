@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 const Vision = () => {
   return (
     <>
-      <Breadcrumb
+      {/* <Breadcrumb
         pageName="Our Vision "
         description="Spring of Life is a non-profit making Christian ministry that offers opportunities for collaborative effort to reach out to Youths and young adults."
-      />
+      /> */}
       <VisionOne />
       <VisionTwo />
     </>

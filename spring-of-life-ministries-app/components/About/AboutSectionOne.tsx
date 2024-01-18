@@ -33,17 +33,11 @@ const AboutSectionOne = () => {
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"
               >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
+                <div className="mx-auto flex flex-wrap">
+                  <div className="w-full px-3 sm:w-1/2 lg:w-full">
                     <List text="Implement transformative programs for youths to positively impact society." />
                     <List text="Empower young adults, especially in developing countries." />
                     <List text="Create small groups in educational institutions for relationship-building and integration." />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Establish a regular support center for academic and life issues in higher institutions." />
-                    <List text="Evaluate and address the needs of youths in developing countries, starting with Nigeria." />
-                    <List text="Organize vocational studies to equip young adults for self-employment and societal impact." />
                   </div>
                 </div>
               </div>

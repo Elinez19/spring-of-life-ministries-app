@@ -1,11 +1,5 @@
-import AboutCta from "@/components/About/AboutCta";
-import AboutHero from "@/components/About/AboutHero";
-import AboutSectionFour from "@/components/About/AboutSectionFour";
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionSix from "@/components/About/AboutSectionSix";
-import AboutSectionThree from "@/components/About/AboutSectionThree";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import AboutTeam from "@/components/About/AboutTeam";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
@@ -20,12 +14,12 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
-      <Breadcrumb
+      {/* <Breadcrumb
         pageName="Our History"
         description="Spring of Life is a non-profit making Christian ministry that offers opportunities for collaborative effort to reach out to Youths and young adults."
-      />
-      <AboutSectionOne />
+      /> */}
       <AboutSectionTwo />
+      <AboutSectionOne />
       {/* <AboutSectionFour />
       <AboutHero />
       <AboutSectionSix />

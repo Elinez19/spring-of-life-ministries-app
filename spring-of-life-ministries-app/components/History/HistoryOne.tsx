@@ -7,9 +7,9 @@ const checkIcon = (
   </svg>
 );
 
-const AboutSectionOne = () => {
+const HistoryOne = () => {
   const List = ({ text }) => (
-    <p className="mb-5 flex items-center text-lg font-medium text-body-color">
+    <p className="mt-30 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
       </span>
@@ -18,14 +18,14 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
+    <section id="about" className="pt-16 md:pt-20 lg:pt-48">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Our Mission"
-                paragraph="Our Mission is to empower the teeming population of youths and young adults so as to rekindle hope in them, and to reach out to them with the everlasting gospel of Christ end time message as recorded in (Rev 14:6-12) in the context of the Great Commission  (Matthew 28:18-29) “Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit…”"
+                title=""
+                paragraph="In June 2019, Oludare and his wife took steps by discussing these great mission opportunities with a few close friends: Pastor Olufemi Okorie; Dr. Olurotimi Adeleye, and Dr. Toying Oyedele who eventually constitute Board members for this Ministry, Spring of Life Ministry took the first step into reaching out to campuses in Nigeria in 2021 by training over 150 student missionaries in about 50 universities and colleges across Western Nigeria."
                 mb="44px"
               />
 
@@ -70,4 +70,4 @@ const AboutSectionOne = () => {
   );
 };
 
-export default AboutSectionOne;
+export default HistoryOne;

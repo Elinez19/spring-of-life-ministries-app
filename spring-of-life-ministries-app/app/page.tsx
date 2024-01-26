@@ -1,20 +1,17 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Blog from "@/components/Blog";
-import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
-import Hero from "@/components/Hero";
-import Tabs from "@/components/Programmes/MissionProgrammes";
-import Mentor from "@/components/Mentor/Mentor";
 import Testimonials from "@/components/Testimonials";
-import Video from "@/components/Video";
 import { Metadata } from "next";
-import Banner from "@/components/Hero/Hero";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Herobanner from "@/components/HeroBanner";
+import Gallery from "@/components/Gallery/Gallery";
+import Gallery1 from "@/components/Gallery1/Gallery1";
+import Services from "@/components/Services/Services";
 
 export const metadata: Metadata = {
   title: "Spring of Life Ministries",
@@ -27,15 +24,12 @@ export default function Home() {
     <>
       <ScrollUp />
       <Herobanner />
-      {/* <Banner />
-      <Hero /> */}
-      <Tabs />
-      <Mentor />
       <Features />
-      <Video />
-      <Brands />
+      <Services />
       <AboutSectionOne />
       <AboutSectionTwo />
+      <Gallery1 />
+      <Gallery />
       <Testimonials />
       {/* <Pricing /> */}
       <Blog />

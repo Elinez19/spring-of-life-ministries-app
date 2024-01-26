@@ -1,3 +1,4 @@
+import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
@@ -14,10 +15,7 @@ export const metadata: Metadata = {
 const Blog = () => {
   return (
     <>
-      <Breadcrumb
-        pageName="Blog Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
-      />
+      <AboutSectionTwo />
 
       <section className="pb-[120px] pt-[120px]">
         <div className="container">

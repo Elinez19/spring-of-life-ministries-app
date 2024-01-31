@@ -38,15 +38,6 @@ const boards: Board[] = [
     desc: "The vision to embark on campus mission in secular higher institution and to support the youth and young adults through youth empowerment was first impressed in the mind of Pastor Oludare Olatunji in 2015.",
   },
   {
-    id: 4,
-    name: "Pastor Oludare Olatunji",
-    href: "#",
-    image: "/images/mentor/boy4.svg",
-    title: "Executive Director",
-
-    desc: "The vision to embark on campus mission in secular higher institution and to support the youth and young adults through youth empowerment was first impressed in the mind of Pastor Oludare Olatunji in 2015.",
-  },
-  {
     id: 5,
     name: "Pastor Oludare Olatunji",
     href: "#",

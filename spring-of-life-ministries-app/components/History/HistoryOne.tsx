@@ -1,70 +1,113 @@
 import Image from "next/image";
-import SectionTitle from "../Common/SectionTitle";
-
-const checkIcon = (
-  <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
-    <path d="M5.8535 12.6631C5.65824 12.8584 5.34166 12.8584 5.1464 12.6631L0.678505 8.1952C0.483242 7.99994 0.483242 7.68336 0.678505 7.4881L2.32921 5.83739C2.52467 5.64193 2.84166 5.64216 3.03684 5.83791L5.14622 7.95354C5.34147 8.14936 5.65859 8.14952 5.85403 7.95388L13.3797 0.420561C13.575 0.22513 13.8917 0.225051 14.087 0.420383L15.7381 2.07143C15.9333 2.26669 15.9333 2.58327 15.7381 2.77854L5.8535 12.6631Z" />
-  </svg>
-);
+import { PiCheckCircleDuotone } from "react-icons/pi";
 
 const HistoryOne = () => {
-  const List = ({ text }) => (
-    <p className="mt-30 flex items-center text-lg font-medium text-body-color">
-      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-        {checkIcon}
-      </span>
-      {text}
-    </p>
-  );
-
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-48">
-      <div className="container">
-        <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
-              <SectionTitle
-                title=""
-                paragraph="In June 2019, Oludare and his wife took steps by discussing these great mission opportunities with a few close friends: Pastor Olufemi Okorie; Dr. Olurotimi Adeleye, and Dr. Toying Oyedele who eventually constitute Board members for this Ministry, Spring of Life Ministry took the first step into reaching out to campuses in Nigeria in 2021 by training over 150 student missionaries in about 50 universities and colleges across Western Nigeria."
-                mb="44px"
-              />
-
-              <div
-                className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
-                data-wow-delay=".15s"
-              >
-                <div className="mx-auto flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full">
-                    <List text="Implement transformative programs for youths to positively impact society." />
-                    <List text="Empower young adults, especially in developing countries." />
-                    <List text="Create small groups in educational institutions for relationship-building and integration." />
-                  </div>
-                </div>
+    <section className="mx-auto mt-12 max-w-7xl px-4 sm:mt-6 sm:px-6 lg:-mt-12 lg:px-4">
+      <div className="bg-gray-100 py-16">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <p className="text-base text-gray-500">
+            This vision became clearly defined through the influence of the Holy
+            Spirit. After sharing the vision with his wife Abiola, both of them
+            decided to seek the face of God through days of fasting and praying
+            for the leading of the Holy Spirit.
+          </p>
+          <p className="mt-4 text-base text-gray-500">
+            In June 2019, Oludare and his wife took steps by discussing these
+            great mission opportunities with a few close friends: Pastor Olufemi
+            Okorie; Dr. Olurotimi Adeleye, and Dr. Toying Oyedele who eventually
+            constitute Board members for this Ministry, Spring of Life Ministry
+            took the first step into reaching out to campuses in Nigeria in 2021
+            by training over 150 student missionaries in about 50 universities
+            and colleges across Western Nigeria.
+          </p>
+          <p className="mt-4 text-base text-gray-500">
+            Also in 2021, We lunch the Youth Empowerment program in Canada to
+            support the youth and young adults especially the new immigrant
+            youths. To the glory of God, the ministry is fully registered in
+            Nigeria; Canada and USA respectively.
+          </p>
+          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                <PiCheckCircleDuotone size={36} />
+              </div>
+              <div className="mt-5">
+                {/* <h3 className="text-lg font-medium text-gray-900">Mission</h3> */}
+                <p className="mt-2 text-base text-gray-500">
+                  In June 2019, Oludare and his wife took steps by discussing
+                  these great mission opportunities with a few close friends:
+                  Pastor Olufemi Okorie; Dr. Olurotimi Adeleye, and Dr. Toying
+                  Oyedele who eventually constitute Board members
+                </p>
               </div>
             </div>
-
-            <div className="w-full px-4 lg:w-1/2">
-              <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
-                data-wow-delay=".2s"
-              >
-                <Image
-                  src="/images/about/splifeministries-img-1.png"
-                  alt="about-image"
-                  width={1400}
-                  height={1400}
-                  className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-                />
-                <Image
-                  src="/images/about/about-image-dark.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
-                />
+            <div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                <PiCheckCircleDuotone size={36} />
+              </div>
+              <div className="mt-5">
+                <h3 className="text-lg font-medium text-gray-900">Values</h3>
+                <p className="mt-2 text-base text-gray-500">
+                  We believe in honesty, integrity, and respect for all
+                  individuals.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                <PiCheckCircleDuotone size={36} />
+              </div>
+              <div className="mt-5">
+                <h3 className="text-lg font-medium text-gray-900">Vision</h3>
+                <p className="mt-2 text-base text-gray-500">
+                  We envision a world where technology is used to solve the most
+                  pressing issues facing humanity and improve people's lives.
+                </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="lg:flex-justify mx-auto my-10 flex max-w-7xl flex-col gap-3 px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:flex lg:flex-row lg:px-8 xl:mt-28">
+        <div className="sm:text-center lg:text-left">
+          {/* <h1 className="text-4xl font-extrabold tracking-tight text-gray-800 sm:text-5xl md:text-6xl">
+            <span className="block xl:inline">Data to enrich your</span>
+            <span className="block text-indigo-600 xl:inline">
+              online business
+            </span>
+          </h1> */}
+          <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+            This vision became clearly defined through the influence of the Holy
+            Spirit. After sharing the vision with his wife Abiola, both of them
+            decided to seek the face of God through days of fasting and praying
+            for the leading of the Holy Spirit.
+          </p>
+          {/* <!-- Button Section --> */}
+          <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div className="rounded-md shadow">
+              <a
+                href="#"
+                className="flex w-full items-center justify-center rounded-md border border-transparent bg-gray-800 px-8 py-3 text-base font-medium text-white hover:bg-gray-600 md:px-10 md:py-4 md:text-lg"
+              >
+                Get started
+              </a>
+            </div>
+          </div>
+          {/* <!-- End of Button Section --> */}
+        </div>
+
+        {/* <!--   Image Section     --> */}
+        <div className="my-4 lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <Image
+            width={100}
+            height={56}
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
+            src="/images/about/splifeministries-img-1.png"
+            alt=""
+          />
+        </div>
+        {/* <!--   End of Image Section     --> */}
       </div>
     </section>
   );

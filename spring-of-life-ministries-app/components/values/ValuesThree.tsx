@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 
-const HistoryTwo = () => {
+const ValuesTwo = () => {
   return (
     <section className="w-full bg-gray-700 bg-[url('/images/about/banner-1.png')] bg-fixed bg-center bg-no-repeat bg-blend-multiply">
       <div className="mx-auto max-w-screen-xl px-4 py-24 text-center lg:py-56">
@@ -12,6 +12,10 @@ const HistoryTwo = () => {
           The vision to embark on campus mission in secular higher institution
           and to support the youth and young adults through youth empowerment
           was first impressed in the mind of Pastor Oludare Olatunji in 2015.
+          This vision became clearly defined through the influence of the Holy
+          Spirit. After sharing the vision with his wife Abiola, both of them
+          decided to seek the face of God through days of fasting and praying
+          for the leading of the Holy Spirit
         </p>
         <div className="mt-10 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
           <a
@@ -47,4 +51,4 @@ const HistoryTwo = () => {
   );
 };
 
-export default HistoryTwo;
+export default ValuesTwo;

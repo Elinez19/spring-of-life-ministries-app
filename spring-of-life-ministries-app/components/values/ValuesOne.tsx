@@ -9,7 +9,7 @@ const checkIcon = (
 
 const ValuesOne = () => {
   const List = ({ text }) => (
-    <p className="mb-5 flex items-center text-lg font-medium text-body-color">
+    <p className="mt-30 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
       </span>
@@ -18,14 +18,14 @@ const ValuesOne = () => {
   );
 
   return (
-    <section id="about" className="pt-16 md:pt-20 lg:pt-28">
+    <section id="about" className="pt-16 md:pt-20 lg:pt-48">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Our Core Values"
-                paragraph="Empower youths and young adults, instilling hope, while spreading the eternal message of Christ as outlined in Revelation 14:6-12, aligning with the Great Commission in Matthew 28:18-20 to make disciples of all nations."
+                title=""
+                paragraph="In June 2019, Oludare and his wife took steps by discussing these great mission opportunities with a few close friends: Pastor Olufemi Okorie; Dr. Olurotimi Adeleye, and Dr. Toying Oyedele who eventually constitute Board members for this Ministry, Spring of Life Ministry took the first step into reaching out to campuses in Nigeria in 2021 by training over 150 student missionaries in about 50 universities and colleges across Western Nigeria."
                 mb="44px"
               />
 
@@ -33,17 +33,11 @@ const ValuesOne = () => {
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"
               >
-                <div className="mx-[-12px] flex flex-wrap">
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
+                <div className="mx-auto flex flex-wrap">
+                  <div className="w-full px-3 sm:w-1/2 lg:w-full">
                     <List text="Implement transformative programs for youths to positively impact society." />
                     <List text="Empower young adults, especially in developing countries." />
                     <List text="Create small groups in educational institutions for relationship-building and integration." />
-                  </div>
-
-                  <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Establish a regular support center for academic and life issues in higher institutions." />
-                    <List text="Evaluate and address the needs of youths in developing countries, starting with Nigeria." />
-                    <List text="Organize vocational studies to equip young adults for self-employment and societal impact." />
                   </div>
                 </div>
               </div>
@@ -55,9 +49,10 @@ const ValuesOne = () => {
                 data-wow-delay=".2s"
               >
                 <Image
-                  src="/images/about/about-image.svg"
+                  src="/images/about/splifeministries-img-1.png"
                   alt="about-image"
-                  fill
+                  width={1400}
+                  height={1400}
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
                 />
                 <Image

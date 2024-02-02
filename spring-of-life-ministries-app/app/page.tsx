@@ -12,6 +12,7 @@ import Herobanner from "@/components/HeroBanner";
 import Gallery from "@/components/Gallery/Gallery";
 import Gallery1 from "@/components/Gallery1/Gallery1";
 import Services from "@/components/Services/Services";
+import Newsletter from "@/components/Newsletter/Newsletter";
 
 export const metadata: Metadata = {
   title: "Spring of Life Ministries",
@@ -26,13 +27,14 @@ export default function Home() {
       <Herobanner />
       <Features />
       <Services />
-      <AboutSectionOne />
-      <AboutSectionTwo />
+      {/* <AboutSectionOne />
+      <AboutSectionTwo /> */}
       <Gallery1 />
       <Gallery />
       <Testimonials />
       {/* <Pricing /> */}
       <Blog />
+      <Newsletter />
       <Contact />
     </>
   );

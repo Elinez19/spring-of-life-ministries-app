@@ -36,7 +36,17 @@ const HistoryOne = () => {
                 {/* <h3 className="text-lg font-medium text-gray-900">Mission</h3> */}
                 <p className="mt-2 text-base text-gray-500">
                   In June 2019, Oludare and his wife took steps by discussing
-                  these great mission opportunities with a few close friends:
+                  these great mission opportunities with a few close friends
+                </p>
+              </div>
+            </div>
+            <div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                <PiCheckCircleDuotone size={36} />
+              </div>
+              <div className="mt-5">
+                {/* <h3 className="text-lg font-medium text-gray-900">Values</h3> */}
+                <p className="mt-2 text-base text-gray-500">
                   Pastor Olufemi Okorie; Dr. Olurotimi Adeleye, and Dr. Toying
                   Oyedele who eventually constitute Board members
                 </p>
@@ -47,19 +57,7 @@ const HistoryOne = () => {
                 <PiCheckCircleDuotone size={36} />
               </div>
               <div className="mt-5">
-                <h3 className="text-lg font-medium text-gray-900">Values</h3>
-                <p className="mt-2 text-base text-gray-500">
-                  We believe in honesty, integrity, and respect for all
-                  individuals.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
-                <PiCheckCircleDuotone size={36} />
-              </div>
-              <div className="mt-5">
-                <h3 className="text-lg font-medium text-gray-900">Vision</h3>
+                {/* <h3 className="text-lg font-medium text-gray-900">Vision</h3> */}
                 <p className="mt-2 text-base text-gray-500">
                   We envision a world where technology is used to solve the most
                   pressing issues facing humanity and improve people's lives.

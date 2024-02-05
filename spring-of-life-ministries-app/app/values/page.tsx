@@ -1,5 +1,3 @@
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Breadcrumb from "@/components/Common/Breadcrumb";
 import ValuesOne from "@/components/Values/ValuesTwo";
 import ValuesTwo from "@/components/Values/ValuesOne";
 

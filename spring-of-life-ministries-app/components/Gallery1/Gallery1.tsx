@@ -115,7 +115,7 @@ const Gallery1 = () => {
     //     </div>
     //   </div>
     // </div>
-    <section className="font-poppins flex items-center  bg-gray-100  py-16 dark:bg-gray-800">
+    <section className="font-poppins mt-10 flex items-center  bg-gray-100  py-16 dark:bg-gray-800">
       <div className="mx-auto max-w-6xl p-4">
         <h2 className="pb-4  text-center text-4xl font-bold text-gray-800 dark:text-gray-400">
           Our Gallery
@@ -123,10 +123,12 @@ const Gallery1 = () => {
         <div className="mx-auto mb-10 w-44 border-b border-indigo-900 dark:border-gray-400"></div>
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           <div className="group relative overflow-hidden rounded-md shadow-sm">
-            <img
-              src="https://i.postimg.cc/4y2GYVks/pexels-kindel-media-8566473.jpg"
+            <Image
+              src="/images/about/banner-3.png"
+              width={100}
+              height={48}
+              alt="Image 1"
               className="h-[300px] w-full transition duration-500 group-hover:origin-center group-hover:rotate-3 group-hover:scale-110"
-              alt=""
             />
             <div className="absolute inset-0 z-0 h-[300px] opacity-50 transition duration-500 group-hover:bg-black"></div>
             <div>
@@ -134,36 +136,26 @@ const Gallery1 = () => {
                 <a
                   href="#"
                   className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 btn-icon lightbox rounded-full text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-camera"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
-                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-                  </svg>
-                </a>
+                ></a>
               </div>
               <div className="absolute bottom-4 left-4 z-10 hidden group-hover:block">
                 <a
                   href=""
                   className="h6 text-lg font-medium text-white transition duration-500 hover:text-blue-300"
                 >
-                  Artificial Inteligence
+                  Spring of Life Programmes
                 </a>
-                <p className="mb-0 text-xs text-gray-300">Robert</p>
+                <p className="mb-0 text-xs text-gray-300">Campus Mission</p>
               </div>
             </div>
           </div>
           <div className="group relative overflow-hidden rounded-md shadow-sm">
-            <img
-              src="https://i.postimg.cc/KjjP7SVB/pexels-designecologist-1779487.jpg"
+            <Image
+              src="/images/about/banner-3.png"
+              width={100}
+              height={100}
+              alt="Image 1"
               className="h-[300px] w-full transition duration-500 group-hover:origin-center group-hover:rotate-3 group-hover:scale-110"
-              alt=""
             />
             <div className="absolute inset-0 z-0 h-[300px] opacity-50 transition duration-500 group-hover:bg-black"></div>
             <div>
@@ -171,36 +163,26 @@ const Gallery1 = () => {
                 <a
                   href="#"
                   className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 btn-icon lightbox rounded-full text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-camera"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
-                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-                  </svg>
-                </a>
+                ></a>
               </div>
               <div className="absolute bottom-4 left-4 z-10 hidden group-hover:block">
                 <a
                   href=""
                   className="h6 text-lg font-medium text-white transition duration-500 hover:text-blue-300"
                 >
-                  Web Technology
+                  Empowerment
                 </a>
-                <p className="mb-0 text-xs text-gray-300">Website</p>
+                <p className="mb-0 text-xs text-gray-300">Impact</p>
               </div>
             </div>
           </div>
           <div className="group relative overflow-hidden rounded-md shadow-sm">
-            <img
-              src="https://i.postimg.cc/rFJdVYPL/pexels-pixabay-270637.jpg"
+            <Image
+              src="/images/about/banner-3.png"
+              width={100}
+              height={100}
+              alt="Image 1"
               className="h-[300px] w-full transition duration-500 group-hover:origin-center group-hover:rotate-3 group-hover:scale-110"
-              alt=""
             />
             <div className="absolute inset-0 z-0 h-[300px] opacity-50 transition duration-500 group-hover:bg-black"></div>
             <div>
@@ -208,112 +190,28 @@ const Gallery1 = () => {
                 <a
                   href="#"
                   className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 btn-icon lightbox rounded-full text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-camera"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
-                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-                  </svg>
-                </a>
+                ></a>
               </div>
               <div className="absolute bottom-4 left-4 z-10 hidden group-hover:block">
                 <a
                   href=""
                   className="h6 text-lg font-medium text-white transition duration-500 hover:text-blue-300"
                 >
-                  Seo Optimization
-                </a>
-                <p className="mb-0 text-xs text-gray-300">Content</p>
-              </div>
-            </div>
-          </div>
-          <div className="group relative overflow-hidden rounded-md shadow-sm">
-            <img
-              src="https://i.postimg.cc/q7HW1jpz/pexels-cottonbro-5473302.jpg"
-              className="h-[300px] w-full transition duration-500 group-hover:origin-center group-hover:rotate-3 group-hover:scale-110"
-              alt=""
-            />
-            <div className="absolute inset-0 z-0 h-[300px] opacity-50 transition duration-500 group-hover:bg-black"></div>
-            <div>
-              <div className=" absolute right-4 top-4 z-10 hidden group-hover:block">
-                <a
-                  href="#"
-                  className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 btn-icon lightbox rounded-full text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-camera"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
-                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-                  </svg>
-                </a>
-              </div>
-              <div className="absolute bottom-4 left-4 z-10 hidden group-hover:block">
-                <a
-                  href=""
-                  className="h6 text-lg font-medium text-white transition duration-500 hover:text-blue-300"
-                >
-                  Cyber Security
-                </a>
-                <p className="mb-0 text-xs text-gray-300">Hackers</p>
-              </div>
-            </div>
-          </div>
-          <div className="group relative overflow-hidden rounded-md shadow-sm">
-            <img
-              src="https://i.postimg.cc/PfcHmbv8/pexels-pixabay-267389.jpg"
-              className="h-[300px] w-full transition duration-500 group-hover:origin-center group-hover:rotate-3 group-hover:scale-110"
-              alt=""
-            />
-            <div className="absolute inset-0 z-0 h-[300px] opacity-50 transition duration-500 group-hover:bg-black"></div>
-            <div>
-              <div className=" absolute right-4 top-4 z-10 hidden group-hover:block">
-                <a
-                  href="#"
-                  className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 btn-icon lightbox rounded-full text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-camera"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
-                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-                  </svg>
-                </a>
-              </div>
-              <div className="absolute bottom-4 left-4 z-10 hidden group-hover:block">
-                <a
-                  href=""
-                  className="h6 text-lg font-medium text-white transition duration-500 hover:text-blue-300"
-                >
-                  Social Security
+                  Personal Development
                 </a>
                 <p className="mb-0 text-xs text-gray-300">
-                  Communication method
+                  Total Transformation
                 </p>
               </div>
             </div>
           </div>
           <div className="group relative overflow-hidden rounded-md shadow-sm">
-            <img
-              src="https://i.postimg.cc/KcnXMXbC/pexels-pixabay-33488.jpg"
+            <Image
+              src="/images/about/banner-3.png"
+              width={100}
+              height={100}
+              alt="Image 1"
               className="h-[300px] w-full transition duration-500 group-hover:origin-center group-hover:rotate-3 group-hover:scale-110"
-              alt=""
             />
             <div className="absolute inset-0 z-0 h-[300px] opacity-50 transition duration-500 group-hover:bg-black"></div>
             <div>
@@ -321,36 +219,26 @@ const Gallery1 = () => {
                 <a
                   href="#"
                   className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 btn-icon lightbox rounded-full text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-camera"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
-                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-                  </svg>
-                </a>
+                ></a>
               </div>
               <div className="absolute bottom-4 left-4 z-10 hidden group-hover:block">
                 <a
                   href=""
                   className="h6 text-lg font-medium text-white transition duration-500 hover:text-blue-300"
                 >
-                  GPS
+                  Leadership School
                 </a>
-                <p className="mb-0 text-xs text-gray-300">Exact Location</p>
+                <p className="mb-0 text-xs text-gray-300">Develop Youth</p>
               </div>
             </div>
           </div>
           <div className="group relative overflow-hidden rounded-md shadow-sm">
-            <img
-              src="https://i.postimg.cc/GtBxvn8V/pexels-thisisengineering-3861958.jpg"
+            <Image
+              src="/images/about/banner-3.png"
+              width={100}
+              height={100}
+              alt="Image 1"
               className="h-[300px] w-full transition duration-500 group-hover:origin-center group-hover:rotate-3 group-hover:scale-110"
-              alt=""
             />
             <div className="absolute inset-0 z-0 h-[300px] opacity-50 transition duration-500 group-hover:bg-black"></div>
             <div>
@@ -358,36 +246,28 @@ const Gallery1 = () => {
                 <a
                   href="#"
                   className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 btn-icon lightbox rounded-full text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-camera"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
-                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-                  </svg>
-                </a>
+                ></a>
               </div>
               <div className="absolute bottom-4 left-4 z-10 hidden group-hover:block">
                 <a
                   href=""
                   className="h6 text-lg font-medium text-white transition duration-500 hover:text-blue-300"
                 >
-                  Software Engineering
+                  Mission institute
                 </a>
-                <p className="mb-0 text-xs text-gray-300">Software</p>
+                <p className="mb-0 text-xs text-gray-300">
+                  Community Empowerment
+                </p>
               </div>
             </div>
           </div>
           <div className="group relative overflow-hidden rounded-md shadow-sm">
-            <img
-              src="https://i.postimg.cc/mZNH6DRj/pexels-lisa-fotios-1092644.jpg"
+            <Image
+              src="/images/about/banner-1.png"
+              width={100}
+              height={100}
+              alt="Image 1"
               className="h-[300px] w-full transition duration-500 group-hover:origin-center group-hover:rotate-3 group-hover:scale-110"
-              alt=""
             />
             <div className="absolute inset-0 z-0 h-[300px] opacity-50 transition duration-500 group-hover:bg-black"></div>
             <div>
@@ -395,28 +275,76 @@ const Gallery1 = () => {
                 <a
                   href="#"
                   className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 btn-icon lightbox rounded-full text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    className="bi bi-camera"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
-                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-                  </svg>
-                </a>
+                ></a>
               </div>
               <div className="absolute bottom-4 left-4 z-10 hidden group-hover:block">
                 <a
                   href=""
                   className="h6 text-lg font-medium text-white transition duration-500 hover:text-blue-300"
                 >
-                  App Development
+                  Global Impact Makers
                 </a>
-                <p className="mb-0 text-xs text-gray-300">Mobile Apps</p>
+                <p className="mb-0 text-xs text-gray-300">
+                  Advanced Social Change
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="group relative overflow-hidden rounded-md shadow-sm">
+            <Image
+              src="/images/about/banner-2.png"
+              width={100}
+              height={100}
+              alt="Image 1"
+              className="h-[300px] w-full transition duration-500 group-hover:origin-center group-hover:rotate-3 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 z-0 h-[300px] opacity-50 transition duration-500 group-hover:bg-black"></div>
+            <div>
+              <div className=" absolute right-4 top-4 z-10 hidden group-hover:block">
+                <a
+                  href="#"
+                  className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 btn-icon lightbox rounded-full text-white"
+                ></a>
+              </div>
+              <div className="absolute bottom-4 left-4 z-10 hidden group-hover:block">
+                <a
+                  href=""
+                  className="h6 text-lg font-medium text-white transition duration-500 hover:text-blue-300"
+                >
+                  Empowerment Projects
+                </a>
+                <p className="mb-0 text-xs text-gray-300">
+                  Vocational Training
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="group relative overflow-hidden rounded-md shadow-sm">
+            <Image
+              src="/images/about/banner-3.png"
+              width={100}
+              height={100}
+              alt="Image 1"
+              className="h-[300px] w-full transition duration-500 group-hover:origin-center group-hover:rotate-3 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 z-0 h-[300px] opacity-50 transition duration-500 group-hover:bg-black"></div>
+            <div>
+              <div className=" absolute right-4 top-4 z-10 hidden group-hover:block">
+                <a
+                  href="#"
+                  className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 btn-icon lightbox rounded-full text-white"
+                ></a>
+              </div>
+              <div className="absolute bottom-4 left-4 z-10 hidden group-hover:block">
+                <a
+                  href=""
+                  className="h-6 text-lg font-medium text-white transition duration-500 hover:text-blue-300"
+                >
+                  Leadership Development
+                </a>
+                <p className="mb-0 text-xs text-gray-300">
+                  Faith-Based Development{" "}
+                </p>
               </div>
             </div>
           </div>

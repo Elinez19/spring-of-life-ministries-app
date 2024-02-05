@@ -16,9 +16,9 @@ const HistoryTwo = () => {
         <div className="mt-10 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
           <a
             href="#"
-            className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-3 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            className="inline-flex items-center justify-center rounded-lg bg-primary px-16 py-4 text-center text-base font-medium text-white hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
           >
-            Get started
+            Join Make Imapct
             <svg
               className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
               aria-hidden="true"

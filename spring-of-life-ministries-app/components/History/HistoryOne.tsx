@@ -29,7 +29,7 @@ const HistoryOne = () => {
           </p>
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-primary text-white">
                 <PiCheckCircleDuotone size={36} />
               </div>
               <div className="mt-5">
@@ -41,7 +41,7 @@ const HistoryOne = () => {
               </div>
             </div>
             <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-primary text-white">
                 <PiCheckCircleDuotone size={36} />
               </div>
               <div className="mt-5">
@@ -53,14 +53,14 @@ const HistoryOne = () => {
               </div>
             </div>
             <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-primary text-white">
                 <PiCheckCircleDuotone size={36} />
               </div>
               <div className="mt-5">
                 {/* <h3 className="text-lg font-medium text-gray-900">Vision</h3> */}
                 <p className="mt-2 text-base text-gray-500">
-                  We envision a world where technology is used to solve the most
-                  pressing issues facing humanity and improve people's lives.
+                  Pastor Olufemi Okorie; Dr. Olurotimi Adeleye, and Dr. Toying
+                  Oyedele who eventually constitute Board members
                 </p>
               </div>
             </div>

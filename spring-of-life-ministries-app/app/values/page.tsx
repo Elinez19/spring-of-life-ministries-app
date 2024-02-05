@@ -1,7 +1,7 @@
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import ValuesOne from "@/components/Values/ValuesOne";
-import ValuesTwo from "@/components/Values/ValuesThree";
+import ValuesOne from "@/components/Values/ValuesTwo";
+import ValuesTwo from "@/components/Values/ValuesOne";
 
 import { Metadata } from "next";
 
@@ -19,8 +19,8 @@ const Values = () => {
         pageName="Our Values "
         description="Spring of Life is a non-profit making Christian ministry that offers opportunities for collaborative effort to reach out to Youths and young adults."
       /> */}
-      <ValuesOne />
       <ValuesTwo />
+      <ValuesOne />
     </>
   );
 };

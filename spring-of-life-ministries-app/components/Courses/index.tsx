@@ -1,4 +1,4 @@
-const Card = () => {
+const Courses = () => {
   return (
     <>
       <section className="bg-gray-2 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
@@ -35,7 +35,7 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Courses;
 
 const SingleCard = ({
   image,

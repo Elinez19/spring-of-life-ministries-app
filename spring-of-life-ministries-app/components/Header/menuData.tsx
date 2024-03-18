@@ -25,12 +25,6 @@ const menuData: Menu[] = [
         newTab: false,
       },
       {
-        id: 43,
-        title: "Our Core Values",
-        path: "/values",
-        newTab: false,
-      },
-      {
         id: 44,
         title: "Board of Directors",
         path: "/board",

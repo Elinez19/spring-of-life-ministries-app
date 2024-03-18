@@ -1,11 +1,11 @@
 import VissionOne from "@/components/Vission/VissionOne";
-import VissionThree from "@/components/Vission/VissionThree";
+import VissionTwo from "@/components/Vission/VissionTwo";
 
 const Vission = () => {
   return (
     <>
+      <VissionTwo />
       <VissionOne />
-      <VissionThree />
     </>
   );
 };

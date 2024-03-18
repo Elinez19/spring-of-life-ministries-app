@@ -49,7 +49,7 @@ const ValuesOne = () => {
                 data-wow-delay=".2s"
               >
                 <Image
-                  src="/images/about/splifeministries-img-1.png"
+                  src="/images/about/banner-3.jpg"
                   alt="about-image"
                   width={1400}
                   height={1400}

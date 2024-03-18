@@ -6,7 +6,7 @@ const History = () => {
   return (
     <>
       <HistoryTwo />
-      <HistoryOne />
+      {/* <HistoryOne /> */}
       <HistoryThree />
     </>
   );

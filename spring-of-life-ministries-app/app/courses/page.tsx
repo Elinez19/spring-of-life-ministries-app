@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 
 import { Metadata } from "next";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
+import Card from "@/components/Courses";
 
 export const metadata: Metadata = {
   title: "Spring of Life Ministries",
@@ -14,8 +15,11 @@ export const metadata: Metadata = {
 const Courses = () => {
   return (
     <>
-      <AboutSectionTwo />
-      <CoursesPage />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </>
   );
 };

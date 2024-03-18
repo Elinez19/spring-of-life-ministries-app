@@ -11,6 +11,7 @@ import Gallery from "@/components/Gallery/Gallery";
 import Gallery1 from "@/components/Gallery1/Gallery1";
 import Newsletter from "@/components/Newsletter/Newsletter";
 import HistoryThree from "@/components/History/HistoryThree";
+import Card from "@/components/Courses";
 
 export const metadata: Metadata = {
   title: "Spring of Life Ministries",
@@ -25,6 +26,7 @@ export default function Home() {
       <Herobanner />
       <Features />
       <HistoryThree />
+      <Card />
       {/* <AboutSectionOne />
       <AboutSectionTwo /> */}
       <Gallery1 />

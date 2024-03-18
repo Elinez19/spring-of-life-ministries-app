@@ -116,7 +116,7 @@ const HistoryThree = () => {
             </div>
             <div className="relative mb-10 w-full px-4 md:w-1/2 lg:mb-0">
               <img
-                src="https://i.postimg.cc/HsSPvTq8/pexels-fauxels-3184357.jpg"
+                src="/images/about/banner-1.png"
                 alt=""
                 className="relative z-40 h-44 w-full rounded-md object-cover md:h-96"
               />
@@ -250,7 +250,7 @@ const HistoryThree = () => {
             </button>
           </div>
           <img
-            src="https://readymadeui.com/team-image.webp"
+            src="/images/about/banner-3.png"
             className="mr-40 h-full w-full shrink-0 object-cover"
           />
         </div>

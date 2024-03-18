@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HistoryTwo = () => {
   return (
-    <section className="w-full bg-gray-700 bg-[url('/images/about/banner-1.png')] bg-fixed bg-center bg-no-repeat bg-blend-multiply">
+    <section className="w-full bg-gray-800 bg-[url('/images/about/banner-5.png')] bg-fixed bg-center bg-no-repeat bg-blend-multiply">
       <div className="mx-auto max-w-screen-xl px-4 py-24 text-center lg:py-56">
         <h1 className="mt-24 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">
           Our History

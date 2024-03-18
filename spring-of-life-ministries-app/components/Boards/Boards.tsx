@@ -60,10 +60,10 @@ const Boards = () => {
   return (
     <div
       id="mentors-section"
-      className="mx-auto max-w-2xl px-4 pb-16 sm:px-6 sm:py-20 lg:max-w-7xl lg:px-8"
+      className="m-auto max-w-2xl px-4 pb-16 sm:px-6 sm:py-20 lg:max-w-7xl lg:px-28"
     >
-      <h2 className="my-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-        Meet with our Board of Directors
+      <h2 className="mx-auto text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        Board of Directors
       </h2>
 
       <div className="mx-auto mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-1 xl:gap-x-8">

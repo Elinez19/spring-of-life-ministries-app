@@ -124,7 +124,7 @@ const Gallery1 = () => {
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           <div className="group relative overflow-hidden rounded-md shadow-sm">
             <Image
-              src="/images/about/banner-3.png"
+              src="/images/about/banner-1.jpg"
               width={100}
               height={48}
               alt="Image 1"

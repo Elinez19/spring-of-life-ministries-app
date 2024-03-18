@@ -1,191 +1,79 @@
-"use client"
-import Slider from "react-slick";
-import React, { Component } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { StarIcon } from '@heroicons/react/24/solid'
+const Card = () => {
+  return (
+    <>
+      <section className="bg-gray-2 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+        <div className="container">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <SingleCard
+              image="https://i.ibb.co/r2zns1m/image-01.jpg"
+              CardTitle="Vocational training"
+              titleHref="/#"
+              btnHref="/#"
+              CardDescription="Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit."
+              Button="View Details"
+            />
+            <SingleCard
+              image="https://i.ibb.co/0nbbWM9/image-02-1.jpg"
+              CardTitle="Leadership Development"
+              CardDescription="Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit."
+              Button="View Details"
+              titleHref={undefined}
+              btnHref={undefined}
+            />
+            <SingleCard
+              image="https://i.ibb.co/dL9fH7N/image-03-1.jpg"
+              CardTitle="Mission Institute"
+              CardDescription="Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit."
+              Button="View Details"
+              titleHref={undefined}
+              btnHref={undefined}
+            />
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
-// CAROUSEL DATA
+export default Card;
 
-interface DataType {
-    heading: string;
-    heading2: string;
-    imgSrc: string;
-    name: string;
-    students: number;
-    classes: number;
-    price: number;
-    rating: number;
-}
+const SingleCard = ({
+  image,
+  Button,
+  CardDescription,
+  CardTitle,
+  titleHref,
+  btnHref,
+}) => {
+  return (
+    <>
+      {/*  */}
+      <div className="shadow-1 hover:shadow-3 dark:bg-dark-2 dark:shadow-card dark:hover:shadow-3 mb-10 overflow-hidden rounded-lg bg-white duration-300">
+        <img src={image} alt="" className="w-full" />
+        <div className="p-8 text-center sm:p-9 md:p-7 xl:p-9">
+          <h3>
+            <a
+              href={titleHref ? titleHref : "/#"}
+              className="mb-4 block text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
+            >
+              {CardTitle}
+            </a>
+          </h3>
+          <p className="dark:text-dark-6 mb-7 text-base leading-relaxed text-body-color">
+            {CardDescription}
+          </p>
 
-const postData: DataType[] = [
-    {
-        heading: 'Full stack modern',
-        heading2: 'javascript',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/courseone.png',
-        students: 150,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'Design system',
-        heading2: 'with React programme',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursetwo.png',
-        students: 130,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'Design banner',
-        heading2: 'with Figma',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursethree.png',
-        students: 120,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/courseone.png',
-        students: 150,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursetwo.png',
-        students: 150,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-    {
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Colt stelle",
-        imgSrc: '/assets/courses/coursethree.png',
-        students: 150,
-        classes: 12,
-        price: 20,
-        rating: 4.7,
-    },
-]
-
-// CAROUSEL SETTINGS
-
-
-export default class MultipleItems extends Component {
-
-    render() {
-        const settings = {
-            dots: false,
-            infinite: true,
-            slidesToShow: 3,
-            // centerMode: true,
-            slidesToScroll: 2,
-            arrows: false,
-            autoplay: false,
-            speed: 500,
-            cssEase: "linear",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                }
-            ]
-        };
-
-
-        return (
-            <div id="courses">
-                <div className='mx-auto max-w-7xl sm:py-8 px-4 lg:px-8 '>
-
-                    <div className="sm:flex justify-between items-center">
-                        <h3 className="text-midnightblue text-4xl lg:text-55xl font-semibold mb-5 sm:mb-0">Popular courses.</h3>
-                        <Link href={'/'} className="text-Blueviolet text-lg font-medium space-links">Explore courses&nbsp;&gt;&nbsp;</Link>
-                    </div>
-
-
-                    <Slider {...settings}>
-                        {postData.map((items, i) => (
-                            <div key={i}>
-
-                                <div className='bg-white m-3 px-3 pt-3 pb-12 my-20 shadow-courses rounded-2xl'>
-                                    <div className="relative rounded-3xl">
-                                        <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="m-auto clipPath" />
-                                        <div className="absolute right-5 -bottom-2 bg-ultramarine rounded-full p-6">
-                                            <h3 className="text-white uppercase text-center text-sm font-medium">best <br /> seller</h3>
-                                        </div>
-                                    </div>
-
-                                    <div className="px-3">
-                                        <h4 className='text-2xl font-bold pt-6 text-black'>{items.heading}</h4>
-                                        <h4 className='text-2xl font-bold pt-1 text-black'>{items.heading2}</h4>
-
-                                        <div>
-                                            <h3 className='text-base font-normal pt-6 opacity-75'>{items.name}</h3>
-                                        </div>
-
-                                        <div className="flex justify-between items-center py-6">
-                                            <div className="flex gap-4">
-                                                <h3 className="text-red text-22xl font-medium">{items.rating}</h3>
-                                                <div className="flex">
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                    <StarIcon className="h-5 w-5 text-gold" />
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <h3 className="text-3xl font-medium">${items.price}</h3>
-                                            </div>
-                                        </div>
-
-                                        <hr style={{ color: "#C4C4C4" }} />
-
-                                        <div className="flex justify-between pt-6">
-                                            <div className="flex gap-4">
-                                                <Image src={'/assets/courses/book-open.svg'} alt="users" width={24} height={24} className="inline-block m-auto" />
-                                                <h3 className="text-base font-medium text-black opacity-75">{items.classes} classes</h3>
-                                            </div>
-                                            <div className="flex gap-4">
-                                                <Image src={'/assets/courses/users.svg'} alt="users" width={24} height={24} className="inline-block m-auto" />
-                                                <h3 className="text-base font-medium text-black opacity-75">{items.students} students</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </Slider>
-                </div>
-            </div>
-
-        );
-    }
-}
+          {Button && (
+            <a
+              href={btnHref ? btnHref : "#"}
+              className="border-gray-3 dark:border-dark-3 dark:text-dark-6 inline-block rounded-full border px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-primary hover:text-white"
+            >
+              {Button}
+            </a>
+          )}
+        </div>
+      </div>
+      {/*  */}
+    </>
+  );
+};

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ValuesOne = () => {
   return (
-    <section className="w-140 mt-40 bg-gray-700 bg-[url('/images/about/banner-1.png')] bg-fixed bg-center bg-no-repeat px-2 py-24 text-center bg-blend-multiply lg:py-6">
+    <section className="mt-40 w-full bg-gray-700 bg-[url('/images/about/banner-1.png')] bg-fixed bg-center bg-no-repeat px-2 py-24 text-center bg-blend-multiply lg:py-6">
       <h1 className="mb-24 mt-24 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">
         Our Core Values
       </h1>

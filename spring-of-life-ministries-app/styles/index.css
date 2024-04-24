@@ -13,12 +13,13 @@
 .slides .swiper-pagination-bullet {
   @apply h-2.5 w-2.5 bg-stroke opacity-100;
 }
+
 .slides .swiper-pagination-bullet-active {
-  @apply w-5 rounded-full bg-primary;
+  @apply w-20 rounded-md	border-2  bg-primary;
 }
 
 .slides .swiper-pagination {
-  @apply relative pt-[50px];
+  @apply relative pt-[-120px];
 }
 
 @layer components {

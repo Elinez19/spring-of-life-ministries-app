@@ -18,7 +18,7 @@ const SingleHeroBanner = ({ banner }: { banner: Herobanner }) => {
         className="h-[100%] w-[100%] object-cover object-right md:h-auto md:object-left-bottom"
         src={img}
         alt="banner"
-        width={8000}
+        width={6000}
         height={4000}
       />
     </div>

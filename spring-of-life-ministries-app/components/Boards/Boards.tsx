@@ -1,5 +1,3 @@
-// Boards DATA
-
 interface Board {
   id: number;
   name: string;

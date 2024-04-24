@@ -40,37 +40,37 @@ const menuData: Menu[] = [
       {
         id: 41,
         title: "Mission Institute",
-        path: "/courses",
+        path: "/course",
         newTab: false,
       },
       {
         id: 42,
         title: "Leadership School",
-        path: "/courses",
+        path: "/course",
         newTab: false,
       },
       {
         id: 43,
         title: "Youth Empowerment Nigeria",
-        path: "/courses",
+        path: "/course",
         newTab: false,
       },
       {
         id: 44,
         title: "Youth Empowerment Canada",
-        path: "/courses",
+        path: "/course",
         newTab: false,
       },
       {
         id: 45,
         title: "Youth Empowerment UK",
-        path: "/courses",
+        path: "/course",
         newTab: false,
       },
       {
         id: 48,
         title: "Bible Study",
-        path: "/courses",
+        path: "/course",
         newTab: false,
       },
     ],
@@ -83,7 +83,7 @@ const menuData: Menu[] = [
       {
         id: 41,
         title: "Community Engagement",
-        path: "/courses",
+        path: "/course",
         newTab: false,
       },
       {
@@ -126,7 +126,7 @@ const menuData: Menu[] = [
       // {
       //   id: 48,
       //   title: "sign in ",
-      //   path: "/courses",
+      //   path: "/course",
       //   newTab: false,
       // },
     ],

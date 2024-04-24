@@ -66,7 +66,9 @@ const Boards = () => {
 
       <div className="mx-auto mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-1 xl:gap-x-8">
         {boards.map((board) => (
-          <div className="p-4">
+          <div key={board.id} className="p-4">
+            {" "}
+            {/* Add key prop */}
             <figure className="max-w-5xl rounded-xl bg-slate-100 p-8 dark:bg-slate-800 md:flex md:p-0">
               <img
                 className="mx-auto h-24 w-24 rounded-full object-cover md:h-auto md:w-48 md:rounded-none"

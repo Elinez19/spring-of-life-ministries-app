@@ -41,13 +41,13 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header -py-10 left-0 top-0 z-40 flex w-full items-center bg-white ${
-          sticky ? "fixed z-[9999] bg-white transition" : "absolute"
+        className={`header-logo -py-10 from-darkgrey hover:from-indigo left-0 top-0 z-40 flex w-full items-center bg-gradient-to-r to-black ${
+          sticky ? "bg-indigo fixed z-[9999] transition" : "absolute"
         }`}
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-50  px-4 xl:mr-12">
+            <div className="w-60  px-4 xl:mr-12">
               <Link
                 href="/"
                 className={`header-logo block w-full ${
@@ -55,16 +55,16 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/logo-7.svg"
+                  src="/images/logo/springoflifeministries-logo2.png"
                   alt="logo"
                   width={240}
-                  height={60}
+                  height={460}
                   className="w-full dark:hidden"
                 />
                 <Image
-                  src="/images/logo/logo-7.svg"
+                  src="/images/logo/springoflifeministries-logo2.png"
                   alt="logo"
-                  width={140}
+                  width={40}
                   height={60}
                   className="hidden w-full dark:block"
                 />
@@ -110,8 +110,8 @@ const Header = () => {
                             href={menuItem.path}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
-                                ? "text-primary dark:text-white"
-                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                                ? "text-white dark:text-white"
+                                : "text-white hover:text-white dark:text-white/70 dark:hover:text-white"
                             }`}
                           >
                             {menuItem.title}
@@ -120,7 +120,7 @@ const Header = () => {
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="flex cursor-pointer items-center justify-between py-2 text-base text-white group-hover:text-white dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -135,7 +135,7 @@ const Header = () => {
                               </span>
                             </p>
                             <div
-                              className={`submenu relative left-0 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
+                              className={`submenu bg-indigo relative left-0 top-full rounded-sm transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
@@ -143,7 +143,7 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={index}
-                                  className="block rounded py-2.5 text-sm text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
+                                  className="block rounded py-2.5 text-sm text-white hover:text-white dark:text-white/70 dark:hover:text-white lg:px-3"
                                 >
                                   {submenuItem.title}
                                 </Link>
@@ -159,13 +159,13 @@ const Header = () => {
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
                   href="/signin"
-                  className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
+                  className="hidden px-7 py-3 text-base font-medium text-white hover:opacity-70 dark:text-white md:block"
                 >
                   Sign In
                 </Link>
                 <Link
                   href="/signup"
-                  className="ease-in-up hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white shadow-btn transition duration-300 hover:bg-opacity-90 hover:shadow-btn-hover md:block md:px-9 lg:px-6 xl:px-9"
+                  className="ease-in-up from-cyan hover:to-indigo500 hidden rounded-sm bg-gradient-to-r to-green px-8 py-3 text-base font-medium text-white shadow-btn transition  duration-300  hover:from-pink-500  md:block md:px-9 lg:px-6 xl:px-9"
                 >
                   Sign Up
                 </Link>

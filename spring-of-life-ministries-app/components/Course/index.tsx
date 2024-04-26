@@ -1,133 +1,163 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import AllCourses from "./CourseData";
+import React, { useState } from "react";
 import Image from "next/image";
-import { FaArrowRight, FaUserAlt, FaPlay } from "react-icons/fa";
+import Link from "next/link";
 
-const Courses = () => {
-  const [courses, setCourses] = useState([]);
-  const [activeCourse, setActiveCourse] = useState("All");
+interface PostData {
+  cta: string;
+  title: string;
+  description: string;
+  imgSrc: string;
+  tag: string;
+}
 
-  useEffect(() => {
-    setCourses(AllCourses);
-  }, []);
+const Course = () => {
+  const [filteredData, setFilteredData] = useState<PostData[] | null>(null);
+  const [activeFilter, setActiveFilter] = useState<string>("All");
 
-  const courseTags = Array.from(new Set(AllCourses.map((item) => item.tag)));
+  const postData: PostData[] = [
+    {
+      cta: "Join the ",
+      title: "LEADERS DEVELOPMENT INSTITUTE (ELDI)",
+      description:
+        "Emerging Leaders Development Institute (ELDI) offers participants the opportunity to form a network of future leaders in Christian education while learning about relational servant leadership and effective management and governance.",
+      imgSrc: "/images/articles/article.png",
+      tag: "Leadership Development",
+    },
+    {
+      cta: "Join the ",
+      title: "Leadership Development Program",
+      description:
+        "This is one of the most current leadership development program for youth ministry in the Seventh-day Adventist Church. The Master Guide is the foundation for youth ministry leadership, that will help keep youth leaders sharp.",
+      imgSrc: "/images/articles/article.png",
+      tag: "Leadership Development",
+    },
+    {
+      cta: "Join the ",
+      title: "Leadership Development Program",
+      description:
+        "This is one of the most current leadership development program for youth ministry in the Seventh-day Adventist Church. The Master Guide is the foundation for youth ministry leadership, that will help keep youth leaders sharp.",
+      imgSrc: "/images/articles/article.png",
+      tag: "Leadership Development",
+    },
+    {
+      cta: "Join the ",
+      title: "INVERSE BIBLE STUDY COURSE",
+      description:
+        "inVerse is a Bible study course for those aged 18–35+  university students, young adults, working professionals, younger parents, and those young at heart.Contemporary biblical topics and  issues concerning youths.",
+      imgSrc: "/images/articles/article2.png",
+      tag: "Bible Study",
+    },
+    {
+      cta: "Join the ",
+      title: "INVERSE BIBLE STUDY COURSE",
+      description:
+        "inVerse is a Bible study course for those aged 18–35+  university students, young adults, working professionals, younger parents, and those young at heart.Contemporary biblical topics and  issues concerning youths.",
+      imgSrc: "/images/articles/article2.png",
+      tag: "Bible Study",
+    },
+    {
+      cta: "Join the ",
+      title: "INVERSE BIBLE STUDY COURSE",
+      description:
+        "inVerse is a Bible study course for those aged 18–35+  university students, young adults, working professionals, younger parents, and those young at heart.Contemporary biblical topics and  issues concerning youths.",
+      imgSrc: "/images/articles/article2.png",
+      tag: "Bible Study",
+    },
+    // Add more data objects as needed
+  ];
 
-  const filterCourses = (tag) => {
-    const filteredCourses =
-      tag === "All"
-        ? AllCourses
-        : AllCourses.filter((course) => course.tag === tag);
-    setCourses(filteredCourses);
-    setActiveCourse(tag);
+  const uniqueTags = Array.from(new Set(postData.map((item) => item.tag)));
+
+  const filterByTag = (tag: string) => {
+    const filtered = postData.filter((item) => item.tag === tag);
+    setFilteredData(filtered);
+    setActiveFilter(tag);
   };
 
+  const resetFilter = () => {
+    setFilteredData(null);
+    setActiveFilter("All");
+  };
+
+  const displayData = filteredData ? filteredData : postData.slice(0, 3);
+
   return (
-    <>
-      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
-        <h1 className="text-center text-3xl font-bold text-gray-900">
-          Featured Courses
-        </h1>
-        <p className="mt-4 text-center text-base text-gray-600">
-          Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget
-          elit id imperdiet et. Cras eu sit dignissim{" "}
-          <br className="hidden lg:inline" /> lorem nibh et. Ac cum eget
-          habitasse in velit fringilla feugiat senectus in.
-        </p>
-        <div className="mt-8">
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-2">
+    <div className="bg-lightgrey py-20" id="blog-section">
+      <div className="mx-auto max-w-7xl sm:py-4 lg:px-8 ">
+        <div className="mb-8 text-center">
+          <h3 className="text-blue text-lg font-normal tracking-widest">
+            Mission Training Programs
+          </h3>
+          <h3 className="text-4xl font-bold sm:text-6xl">
+            Choose from our extensive array of learning opportunities
+          </h3>
+        </div>
+
+        <div className="mb-4 flex justify-center gap-4">
+          <button
+            className={`focus:shadow-outline text-grey200 rounded-lg border border-gray-800 bg-black bg-gradient-to-b px-6 py-3 text-2xl font-bold leading-none focus:outline-none ${
+              activeFilter === "All"
+                ? "from-indigo500 hover:from-darkgrey to-black"
+                : "from-darkgrey hover:from-indigo to-black"
+            }`}
+            onClick={resetFilter}
+          >
+            All
+          </button>
+          {uniqueTags.map((tag) => (
             <button
-              onClick={() => filterCourses("All")}
-              className={`rounded-lg px-4 py-2 text-sm font-medium transition-all focus:outline-none ${
-                activeCourse === "All"
-                  ? "bg-primary text-white hover:bg-blue-900"
-                  : "bg-white text-gray-900 hover:bg-gray-200"
+              key={tag}
+              className={`focus:shadow-outline text-grey200 rounded-lg border border-gray-800 bg-black bg-gradient-to-b px-6 py-3 text-2xl font-bold leading-none focus:outline-none ${
+                activeFilter === tag
+                  ? "from-indigo500 hover:from-darkgrey to-black"
+                  : "from-darkgrey hover:from-indigo to-black"
               }`}
+              onClick={() => filterByTag(tag)}
             >
-              All
+              {tag}
             </button>
-            {courseTags.map((tag) => (
-              <button
-                key={tag}
-                onClick={() => filterCourses(tag)}
-                className={`rounded-lg px-4 py-2 text-sm font-medium transition-all focus:outline-none ${
-                  activeCourse === tag
-                    ? "bg-primary text-white hover:bg-blue-900"
-                    : "bg-white text-gray-900 hover:bg-gray-200"
-                }`}
-              >
-                {tag}
-              </button>
-            ))}
-          </div>
-          <div className="mt-8 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {courses.map((course) => (
-              <div
-                key={course.id}
-                className="overflow-hidden rounded-lg border-2 border-transparent bg-white shadow-md transition-shadow hover:border-blue-900 hover:shadow-lg"
-              >
-                <div className="group relative cursor-pointer overflow-hidden">
-                  <div className="rounded-lg p-4">
-                    <Image
-                      src={course.image}
-                      width={320}
-                      height={180}
-                      loading="lazy"
-                      className="h-48 w-full transform rounded-lg object-cover transition-transform hover:scale-105 sm:h-64"
-                      alt="Course Image"
-                    />
-                  </div>
-                </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {displayData.map((item, index) => (
+            <div
+              key={index}
+              className="shadow-courses overflow-hidden rounded-3xl border-8 border-white bg-white shadow-lg"
+            >
+              <div className="transform transition duration-300 ease-in-out hover:scale-105">
                 <div className="p-4">
-                  <div className="flex items-center">
-                    <FaPlay className="text-blue-950" />
-                    <span className="ml-2 text-sm font-semibold text-gray-700">
-                      {course.plays} Plays
-                    </span>
-                  </div>
-                  <h2 className="mt-2 text-lg font-semibold text-gray-900">
-                    {course.heading}
-                  </h2>
-                  <div className="mt-3 flex justify-between">
-                    <div className="text-sm">
-                      <span className="text-gray-700">Price: </span>
-                      <span className="font-semibold text-gray-900">
-                        ${course.sellingPrice}
-                      </span>
-                      <span className="ml-1 text-gray-500 line-through">
-                        ${course.costPrice}
-                      </span>
-                    </div>
-                    <div className="text-sm">
-                      <span className="text-gray-700">Rating: </span>
-                      <span className="font-semibold text-gray-900">
-                        {course.review}/5
-                      </span>
-                    </div>
-                  </div>
-                  <div className="mt-4">
-                    <div className="flex items-center text-sm">
-                      <FaUserAlt className="mr-1 text-gray-600" />
-                      <span className="text-gray-700">
-                        {course.NumStudents} Students
-                      </span>
-                    </div>
-                  </div>
-                  <div className="mt-4">
-                    <button className="w-full rounded-lg bg-primary px-3 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-900 focus:outline-none">
-                      View Course
-                      <FaArrowRight className="ml-1 inline" />
-                    </button>
-                  </div>
+                  <Image
+                    src={item.imgSrc}
+                    alt="Article Image"
+                    width={389}
+                    height={262}
+                    className="rounded-lg"
+                  />
                 </div>
               </div>
-            ))}
-          </div>
+              <div className="p-6">
+                <h4 className="pb-2 text-2xl font-bold text-black">
+                  {item.title}
+                </h4>
+                <div className="pb-6">
+                  <h3 className="pb-2 text-base font-normal opacity-75">
+                    {item.description}
+                  </h3>
+                </div>
+                <Link href="/">
+                  <h3 className="article-img mb-4 ml-12 inline-block w-60 rounded-full bg-[#051335] px-6 py-3 text-center text-white hover:bg-black hover:shadow-xl">
+                    {item.cta} Course
+                  </h3>
+                </Link>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Courses;
+export default Course;

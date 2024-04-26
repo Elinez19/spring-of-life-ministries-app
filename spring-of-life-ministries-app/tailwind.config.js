@@ -41,6 +41,7 @@ module.exports = {
         yellow: "#F69E00",
         orange: '#F9CD92',
         green: '#6B9F36',
+        cyan: '#26C6DA',
         "body-color": "#788293",
         "body-color-dark": "#959CB1",
         'bgpurple': '#451F49',
@@ -48,7 +49,11 @@ module.exports = {
         "gray-light": "#F0F2F9",
         stroke: "#E3E8EF",
         "stroke-dark": "#353943",
+        'darkgrey' : '#161e2e',
         "bg-color-dark": "#171C28",
+        'indigo' : "#27214d",
+        'indigo500' : "#4f46e5",
+        'grey200' : "#c7d2fe"
       },
 
       boxShadow: {

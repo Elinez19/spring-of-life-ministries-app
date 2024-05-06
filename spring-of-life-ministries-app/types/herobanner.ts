@@ -4,4 +4,5 @@ export type Herobanner = {
   title: string;
   paragraphy: string;
   img: string;
+  buttonText: string;
 };

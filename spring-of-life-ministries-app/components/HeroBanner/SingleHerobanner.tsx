@@ -1,26 +1,37 @@
 import Image from "next/image";
 import { Herobanner } from "@/types/herobanner";
 const SingleHeroBanner = ({ banner }: { banner: Herobanner }) => {
-  const { id, mainTitle, img, title, paragraphy } = banner;
+  const { id, mainTitle, img, title, paragraphy, buttonText } = banner;
   return (
-    <div className="w-fulll relative h-full border-none outline-none">
-      <div className="absolute bottom-[20%] left-[20px] top-[50%] w-full max-w-[1250px] -translate-y-[50%] space-y-2 rounded-lg bg-[#ffffffa2] p-4 sm:max-w-[350px] sm:rounded-none sm:bg-transparent sm:p-0 md:left-[70px] lg:space-y-4">
-        <h3 className="text-[24px] text-white lg:text-[26px]">{title}</h3>
-        <h2 className="whitespace-nowrap text-[3px] font-extrabold leading-[1] text-white md:text-[30px] lg:text-[36px]">
-          {mainTitle}
-        </h2>
-        <p className="mb-12 whitespace-nowrap text-[3px] leading-[1] text-white sm:text-lg md:text-xl">
-          {paragraphy}
-        </p>
+    <div className="relative h-[500px] md:h-[600px] xl:h-[700px]">
+      <div className="absolute inset-0">
+        <Image
+          src={img}
+          alt="hero section"
+          layout="fill"
+          objectFit="cover"
+          className="absolute inset-0"
+        />
+        <div className="absolute inset-0 bg-purple opacity-50"></div>
       </div>
-
-      <Image
-        className="h-[100%] w-[100%] object-cover object-right md:h-auto md:object-left-bottom"
-        src={img}
-        alt="banner"
-        width={6000}
-        height={4000}
-      />
+      <div className="absolute inset-0 z-10 flex items-center justify-center text-center text-white">
+        <div className="max-w-[1200px]">
+          <h1 className="mb-8 text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl xl:text-6xl">
+            {mainTitle}
+          </h1>
+          <p className="mb-8 whitespace-normal text-xs md:text-sm lg:text-base xl:text-lg">
+            {paragraphy}
+          </p>
+          <button
+            type="button"
+            className="rounded border-2 border-white px-6 py-2 text-sm font-medium uppercase leading-normal transition duration-150 ease-in-out hover:border-opacity-0 hover:bg-opacity-0 hover:text-white focus:border-opacity-0 focus:text-white focus:outline-none focus:ring-0 active:border-opacity-0 active:text-white"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            {buttonText}
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

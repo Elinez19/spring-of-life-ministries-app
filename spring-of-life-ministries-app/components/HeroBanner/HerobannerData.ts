@@ -10,6 +10,7 @@ export const HerobannerData: Herobanner[] = [
     mainTitle: "Spring of Life Ministries ",
     paragraphy:
       "Empowering Dreams, Transforming Destinies: Spring of Life Ministry - A Beacon of Hope for Young Hearts",
+    buttonText: "Get Started",
   },
   {
     id: 1,
@@ -18,12 +19,17 @@ export const HerobannerData: Herobanner[] = [
     mainTitle: "Develop a disciple-making Culture Among Students In Campuses",
     paragraphy:
       "Personal Development and Mastery||careerdevelopment and Vocational Training Programmes",
+          buttonText: "Get Started",
+
   },
   {
     id: 2,
     img: "/images/about/banner-3.png",
     title: "Our Mission",
     mainTitle: "Develop a disciple-making Culture Among Students In Campuses",
-    paragraphy: "",
-  },
+    paragraphy:
+      "Personal Development and Mastery||careerdevelopment and Vocational Training Programmes",  
+        buttonText: "Get Started",
+
+    },
 ];
